@@ -1,7 +1,7 @@
 {
-  "name": "fastify-api",
+  "name": "node-fastify-api",
   "version": "1.0.0",
-  "description": "This project was bootstrapped with Fastify-CLI.",
+  "description": "RESTful API written with Node.js and built with Fastify framework.",
   "main": "app.js",
   "type": "module",
   "directories": {
