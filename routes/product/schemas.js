@@ -28,11 +28,6 @@ export const postSchema = {
   body: productSchema,
   response: {
     201: productSchema
-  },
-  config: {
-    swagger: {
-      exposeHeadRoute: true,
-    }
   }
 }
 
