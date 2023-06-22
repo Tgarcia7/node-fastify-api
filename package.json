@@ -23,10 +23,12 @@
     "@fastify/sensible": "^4.1.0",
     "@fastify/swagger": "^8.6.0",
     "@fastify/swagger-ui": "^1.9.0",
+    "@fastify/view": "^7.4.1",
     "fastify": "^4.0.0",
     "fastify-cli": "^4.4.0",
     "fastify-mongoose-driver": "^3.2.0",
-    "fastify-plugin": "^3.0.0"
+    "fastify-plugin": "^3.0.0",
+    "handlebars": "^4.7.7"
   },
   "devDependencies": {
     "eslint": "^8.43.0",

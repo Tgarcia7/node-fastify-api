@@ -8,6 +8,7 @@ import {
 } from './schemas.js'
 
 async function router (fastify, _opts) {
+  fastify.get('/list', Product.list)
   fastify.get('/:id', { schema: getSchema }, Product.get)
   fastify.get('/', { schema: getAllSchema }, Product.getAll)
   fastify.post('/', { schema: postSchema }, Product.create)

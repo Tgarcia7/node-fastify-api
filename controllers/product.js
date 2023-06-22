@@ -78,10 +78,16 @@ async function remove (request, reply) {
   }
 }
 
+async function list (request, reply) {
+  const products = await Product.find({}).lean()
+  return reply.view('/views/products.hbs', { products })
+}
+
 export default {
   get,
   getAll,
   create,
   update,
-  remove
+  remove,
+  list
 }
