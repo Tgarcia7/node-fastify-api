@@ -40,4 +40,8 @@ export default fp(async function (fastify, _opts) {
     transformSpecification: (swaggerObject, _request, _reply) => { return swaggerObject },
     transformSpecificationClone: true
   })
+
+  fastify.addHook('onReady', () => {
+    fastify.swagger()
+  })
 })

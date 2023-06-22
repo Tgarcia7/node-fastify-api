@@ -28,6 +28,11 @@ async function dbConnector (fastify, _options) {
 
     fastify.log.info('DB initialized successfully')
   })
+
+  fastify.addHook('onClose', async () => {
+    const mongoose = mongooseDriver.decorator()
+    await mongoose.instance.connection.close()
+  })
 }
 
 export default fp(dbConnector)
